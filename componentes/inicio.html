@@ -1,0 +1,171 @@
+		<div data-role="header">
+			<h1>Crea tu Presupuesto</h1>
+			<div class="navegacion"></div>
+		</div>
+
+		<div role="main" class="ui-content">
+			<form>
+				<h3 class="ui-bar ui-bar-a"> Personaliza los Parametros </h3>
+				<div class="ui-body">
+
+					<label for="paginas">Paginas <small>Selecione el numero de paginas a realizar</small></label>
+					<input name="paginas" id="paginas" min="0" max="50" value="1" type="range">
+
+					<label for="temas">Temas <small>Selecione el numero de temas a realizar</small></label>
+					<input name="temas" id="temas" min="0" max="50" value="1" type="range">
+
+					<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+
+						        <legend>Complejidad<small id="complejidad-descripcion"></small></legend>
+
+						        <input type="radio" name="complejidad" id="c-personal" value="personal" checked="checked" data-descripcion="Descipcion 1">
+						        <label for="c-personal">Personal</label>
+
+						        <input type="radio" name="complejidad" id="c-standar" value="standar" data-descripcion="Descipcion 2">
+						        <label for="c-standar">Standar</label>
+
+						        <input type="radio" name="complejidad" id="c-profesional" value="profesional" data-descripcion="Descipcion 3">
+						        <label for="c-profesional">Profesional</label>
+
+						 		<input type="radio" name="complejidad" id="c-avanzado" value="on" checked="avanzado" data-descripcion="Descipcion 4">
+						        <label for="c-avanzado">Avanzado</label>
+
+						        <input type="radio" name="complejidad" id="c-deluxe" value="deluxe" data-descripcion="Descipcion 5">
+						        <label for="c-deluxe">Deluxe</label>
+
+						        <input type="radio" name="complejidad" id="c-empresarial" value="empresarial" data-descripcion="Descipcion 6">
+						        <label for="c-empresarial">Empresarial</label>
+					    </fieldset>
+
+					<label for="emails">Emails <small>Seleccione la Cantidad de Emails a configurar</small></label>
+					<input name="emails" id="emails" data-highlight="true" min="0" max="100" value="50" type="range">
+
+					<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+						<legend>Opciones <small>Selecciona lo que deseas</small></legend>
+
+						<input name="opciones" id="o-logo" type="checkbox" value="logo">
+						<label for="o-logo">Logo</label>
+
+						<input name="opciones" id="o-feed" type="checkbox" value="feed">
+						<label for="o-feed">Feed RSS</label>
+
+						<input name="opciones" id="o-resp" type="checkbox" value="resp">
+						<label for="o-resp">Responsive</label>
+
+						<input name="opciones" id="o-busqueda" type="checkbox" value="busqueda">
+						<label for="o-busqueda">Busqueda</label>
+
+						<input name="opciones" id="o-carga" type="checkbox" value="carga">
+						<label for="o-carga">Carga de Archivos</label>
+					</fieldset>
+
+					<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+						<legend>Social <small>Incrementa la interaccion de tus visitantes con contenido social dinamico</small></legend>
+
+						<input name="social" id="s-facebook" type="checkbox" value="facebook">
+						<label for="s-facebook">Facebook</label>
+
+						<input name="social" id="s-twitter" type="checkbox" value="twitter">
+						<label for="s-twitter">Twitter</label>
+
+						<input name="social" id="s-blog" type="checkbox" value="blog">
+						<label for="s-blog">Blog</label>
+
+						<input name="social" id="s-ytube" type="checkbox" value="ytube">
+						<label for="s-ytube">YouTube</label>
+
+						<input name="social" id="s-otro" type="checkbox" value="otro">
+						<label for="s-otro">Otro</label>
+					</fieldset>
+
+					<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+						<legend>Fotos <small>Muestra Fotos e Imagenes para ofrecer una experiencia Vibrante</small></legend>
+
+						<input name="fotos" id="f-galeria" type="checkbox" value="galeria">
+						<label for="f-galeria">Galeria</label>
+
+						<input name="fotos" id="f-slider" type="checkbox" value="slider">
+						<label for="f-slider">Slider</label>
+
+						<input name="fotos" id="f-gestion" type="checkbox" value="gestion">
+						<label for="f-gestion">Gestion de Imagenes</label>
+
+						<input name="fotos" id="f-flickr" type="checkbox" value="flickr">
+						<label for="f-flickr">Flickr</label>
+
+						<input name="fotos" id="f-otra" type="checkbox" value="otra">
+						<label for="f-otra">Otra Integracion</label>
+					</fieldset>
+
+					<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+						<legend>Modulos <small>Contenido y secciones dinamicas</small></legend>
+
+						<input name="modulos" id="m-login" type="checkbox" value="login">
+						<label for="m-login">Login</label>
+
+						<input name="modulos" id="m-perfil" type="checkbox" value="perfil">
+						<label for="m-perfil">Perfil de Usuario</label>
+
+						<input name="modulos" id="m-productos" type="checkbox" value="productos">
+						<label for="m-productos">Productos</label>
+
+						<input name="modulos" id="m-paginas" type="checkbox" value="paginas">
+						<label for="m-paginas">Paginas Editables (CMS)</label>
+
+						<input name="modulos" id="m-comentarios" type="checkbox" value="comentarios">
+						<label for="m-comentarios">Comentarios</label>
+					</fieldset>
+
+					<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+						<legend>Monetizacion <small>Gestiona pagos y comercio electronico</small></legend>
+
+						<input name="monetizacion" id="mo-donaciones" type="checkbox" value="donaciones">
+						<label for="mo-donaciones">Aceptar Donaciones</label>
+
+						<input name="monetizacion" id="mo-basico" type="checkbox" value="basico">
+						<label for="mo-basico">eCommerce Basico</label>
+
+						<input name="monetizacion" id="mo-intermedio" type="checkbox" value="intermedio">
+						<label for="mo-intermedio">eCommerce Intermedio</label>
+
+						<input name="monetizacion" id="mo-avanzado" type="checkbox" value="avanzado">
+						<label for="mo-avanzado">eCommerce Avanzado</label>
+
+						<input name="monetizacion" id="mo-contenido" type="checkbox" value="contenido">
+						<label for="mo-contenido">Contenido Descargable</label>
+					</fieldset>
+
+					<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+						<legend>Gestion de Servicios <small>Servicios recurrentes a ser gestionados mensualmente</small></legend>
+
+						<input name="servicios" id="ser-hosting" type="checkbox" value="hosting">
+						<label for="ser-hosting">Hosting</label>
+
+						<input name="servicios" id="ser-dominio" type="checkbox" value="dominio">
+						<label for="ser-dominio">Dominio</label>
+
+						<input name="servicios" id="ser-email" type="checkbox" value="email">
+						<label for="ser-email">Email</label>
+
+						<input name="servicios" id="ser-publicidad" type="checkbox" value="publicidad">
+						<label for="ser-publicidad">Publicidad</label>
+
+						<input name="servicios" id="ser-lista" type="checkbox" value="lista">
+						<label for="ser-lista">Lista de Correos</label>
+					</fieldset>
+
+					<div style="margin-top: 2em">
+						<label for="total">Total Bs. </label>
+						<input name="total" id="total" value="1200.00" type="text" disabled="disabled" class="text-total">
+					</div>
+
+
+					<input data-clear-btn="false" name="envio-email" data-clear-btn="true" id="envio-email" placeholder="correo@dominio.com" type="email">
+					<a href="#" class="ui-btn ui-btn-inline ui-icon-mail ui-btn-icon-left">Enviar</a>
+
+					<input data-clear-btn="false" name="guardar" data-clear-btn="true" id="guardar" placeholder="Nombre y Apellido" required="required">
+					<a href="#" class="ui-btn ui-btn-inline ui-icon-check ui-btn-icon-left">Guardar</a>
+				</div>
+
+			</form>
+		</div>
